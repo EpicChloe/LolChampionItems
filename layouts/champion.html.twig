@@ -1,0 +1,41 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+  <div class="champion-header" style="background-image: url({{ champion.image.src }}); background-position: {{ champion.image.position }};">
+    <h1>{{ champion.name }}</h1>
+  </div>
+  <h2>Notes</h2>
+  <ul>
+    {% for note in champion.notes %}
+      <li>{{ note }}</li>
+    {% endfor %}
+  </ul>
+  <h2>Playstyles</h2>
+  <div class="row">
+    {% for playstyle in champion.playstyles %}
+      <div class="span3">
+        <p><b>{{ playstyle.name }}</b></p>
+        <ul>
+          {% for note in playstyle.notes %}
+            <li>{{ note }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+  {% for index, item in champion.items %}
+    <h3>Item Slot {{ index + 1 }}: {{ item.name }}</h3>
+    <div class="row">
+      {% for playstyle, variation in item.variations %}
+        <div class="span3">
+          <p><b>{{ champion.playstyles[playstyle].name }}</b></p>
+          <ul>
+            {% for note in variation.notes %}
+              <li>{{ note }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+{% endblock %}

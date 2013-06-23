@@ -1,0 +1,77 @@
+{
+    "name": "Ezreal",
+    "image": {
+        "src": "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_0.jpg",
+        "position": "-185px -47px"
+    },
+    "notes": [
+        "Spell Spammer",
+        "Double scales with CDR",
+        "Large AS steroid",
+        "All abilities scale with AP"
+    ],
+    "playstyles": [{
+        "name": "Spammer",
+        "notes": [
+            "Low damage",
+            "High CDR",
+            "Focus on kiting to deal sustained damage"
+        ]
+    }, {
+        "name": "Hammer",
+        "notes": [
+            "High damage",
+            "No CDR",
+            "Hitting spells will deal massive damage"
+        ]
+    }, {
+        "name": "Sustain",
+        "notes": [
+            "Moderate spell damage",
+            "Focus on sustained auto attack damage"
+        ]
+    }],
+    "items": [{
+        "name": "Sustain",
+        "variations": [{
+            "notes": [
+                "Low damage",
+                "Mana Sustain",
+                "6% CDR",
+                "Healing with spell damage"
+            ]
+        }, {
+            "notes": [
+                "High damage",
+                "Percentage healing"
+            ]
+        }, {
+            "notes": [
+                "Medium damage",
+                "Attack Speed",
+                "3% CDR",
+                "Heal per hit"
+            ]
+        }]
+    }, {
+        "name": "Damage",
+        "variations": [{
+            "notes": [
+                "Low damage",
+                "6% CDR",
+                "Sheen style"
+            ]
+        }, {
+            "notes": [
+                "High damage",
+                "Armor and MR pen on hit"
+            ]
+        }, {
+            "notes": [
+                "Medium damage",
+                "3% CDR",
+                "AP added to auto attack"
+            ]
+        }]
+    }]
+}

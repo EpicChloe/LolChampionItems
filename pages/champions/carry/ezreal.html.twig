@@ -1,98 +1,8 @@
-{% extends "layout.html.twig" %}
+{% extends "champion.html.twig" %}
 
 {% set activePage = 'ezreal' %}
-
-{% block content %}
-  <div class="champion-header" style="background-image: url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_0.jpg); background-position: -185px -47px;">
-    <h1>Ezreal</h1>
-  </div>
-  <h2>Notes</h2>
-  <ul>
-    <li>Spell Spammer</li>
-    <li>Double scales with CDR</li>
-    <li>Large AS steroid</li>
-    <li>All abilities scale with AP</li>
-  </ul>
-  <h2>Playstyles</h2>
-    <div class="row">
-      <div class="span3">
-        <p><b>Spammer</b></p>
-        <ul>
-          <li>Low damage</li>
-          <li>High CDR</li>
-          <li>Focus on kiting to deal sustained damage</li>
-        </ul>
-      </div>
-      <div class="span3">
-        <p><b>Hammer</b></p>
-        <ul>
-          <li>High damage</li>
-          <li>No CDR</li>
-          <li>Hitting spells will deal massive damage</li>
-        </ul>
-      </div>
-      <div class="span3">
-        <p><b>Sustain</b></p>
-        <ul>
-          <li>Moderate spell damage</li>
-          <li>Focus on sustained auto attack damage</li>
-        </ul>
-      </div>
-    </div>
-  <h3>Item Slot 1: Sustain</h3>
-    <div class="row">
-      <div class="span3">
-        <p><b>Spammer</b></p>
-        <ul>
-          <li>Low damage</li>
-          <li>Mana Sustain</li>
-          <li>6% CDR</li>
-          <li>Healing with spell damage</li>
-        </ul>
-      </div>
-      <div class="span3">
-        <p><b>Hammer</b></p>
-        <ul>
-          <li>High damage</li>
-          <li>Percentage healing</li>
-        </ul>
-      </div>
-      <div class="span3">
-        <p><b>Sustain</b></p>
-        <ul>
-          <li>Medium damage</li>
-          <li>Attack Speed</li>
-          <li>3% CDR</li>
-          <li>Heal per hit</li>
-        </ul>
-      </div>
-    </div>
-  <h3>Item Slot 2: Damage</h3>
-    <div class="row">
-      <div class="span3">
-        <p><b>Spammer</b></p>
-        <ul>
-          <li>Low damage</li>
-          <li>6% CDR</li>
-          <li>Sheen style</li>
-        </ul>
-      </div>
-      <div class="span3">
-        <p><b>Hammer</b></p>
-        <ul>
-          <li>High damage</li>
-          <li>Armor and MR pen on hit</li>
-        </ul>
-      </div>
-      <div class="span3">
-        <p><b>Sustain</b></p>
-        <ul>
-          <li>Medium damage</li>
-          <li>3% CDR</li>
-          <li>AP added to auto attack</li>
-        </ul>
-      </div>
-    </div>
+{% set champion = get_json('../json/ezreal.json') %}
+{# block content %}
   <h3>Item Slot 3: Mobility</h3>
     <div class="row">
       <div class="span3">
@@ -182,4 +92,4 @@
         </ul>
       </div>
     </div>
-{% endblock %}
+{% endblock #}
